@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/photo12"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registration form"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/et_fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Enter First Name "
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/et_lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Last Name "
+        android:layout_below="@id/et_fname" />
+
+    <EditText
+        android:id="@+id/et_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter Mobile Number"
+        android:layout_below="@id/et_lname"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Email"
+         android:inputType="textEmailAddress"
+        android:layout_below="@id/et_mobile"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Select Gender"
+        android:layout_below="@id/et_email"
+        android:layout_marginTop="20dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg"
+        android:layout_below="@id/et_email"
+        android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/rb_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="M"/>
+
+    <RadioButton
+        android:id="@+id/rb_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="F" />
+
+    <RadioButton
+        android:id="@+id/rb_tg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="TG"/>
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/tv_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Choose Hobbey"
+        android:layout_below="@id/views"
+        android:layout_marginTop="10dp"/>
+    <CheckBox
+        android:id="@+id/ch_co"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Codding"/>
+    <CheckBox
+        android:id="@+id/ch_ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accepting Challenge"/>
+
+    <CheckBox
+        android:id="@+id/ch_lm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listening music"/>
+    <CheckBox
+        android:id="@+id/ch_te"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teaching"/>
+    <CheckBox
+        android:id="@+id/ch_tr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travelling"/>
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit Value"
+        android:backgroundTint="@color/black"/>
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
